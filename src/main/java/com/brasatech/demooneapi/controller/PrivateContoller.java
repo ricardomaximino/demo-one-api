@@ -1,0 +1,21 @@
+package com.brasatech.demooneapi.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/private")
+public class PrivateContoller {
+
+    @GetMapping("/one")
+    public String one(){
+        return "Private One";
+    }
+    
+    @GetMapping("/two")
+    public String two(){
+        return "Private Two";
+    }
+    
+}
